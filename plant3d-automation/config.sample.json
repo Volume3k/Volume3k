@@ -1,0 +1,36 @@
+{
+  "_comment": "Copy to config.json and edit. Backslashes must be doubled in JSON.",
+
+  "Mode": "Acad",
+
+  "AcadExe": "C:\\Program Files\\Autodesk\\AutoCAD 2026\\acad.exe",
+  "Language": "en-US",
+  "Profile": "",
+
+  "ProjectDrawing": "C:\\Plant3D\\Projects\\MyProject\\Plant 3D Models\\_DailyReports.dwg",
+
+  "StartupDelayMs": 15000,
+
+  "PreCommands": [
+    "(load \"C:/Plant3D/Tools/ProjectReports.lsp\")"
+  ],
+
+  "ReportCommands": [
+    "MYREPORT1",
+    "MYREPORT2"
+  ],
+
+  "TimeoutMinutes": 45,
+  "LogDir": "C:\\Plant3D\\Automation\\Logs",
+  "KeepLogDays": 30,
+
+  "AllowWhenAcadRunning": false,
+
+  "ReportCreatorExe": "C:\\Program Files\\Autodesk\\AutoCAD 2026\\PLNT3D\\PnPReportCreator.exe",
+  "ReportCreatorJobs": [
+    {
+      "Project": "C:\\Plant3D\\Projects\\MyProject\\Project.xml",
+      "Config": "C:\\Plant3D\\Projects\\MyProject\\Reports\\LineList.rcf"
+    }
+  ]
+}
